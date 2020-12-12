@@ -6,21 +6,21 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.emil7f.myrestapi.service.HelloService;
 
 
-/**
- * Dzięki adnotacji @RestController Spring będzie mógł sobie odnaleźć taką klase przy użyciu
- *
- * ComponentScan i utworzyć dla niej Bean'a
- * <p>
- * W Spring'u możemy wstrzykiwać zaleźności na trzy sposoby.
- * 1. To przez pole, tak jak poniżej. Z andotacją @Autowired
- * 2. Przez adnotowanie settera
- * 3. Przez konstruktor  - najlepszy
- *
- *  tips: Jeśli używamy lomboka, możemy się spotkać jeszcze adnotacje
- *       RequiredArgsContstruktor
- *       wtedy nie trzeba tworzyć konstruktora
- */
-@RestController
+///**
+// * Dzięki adnotacji @RestController Spring będzie mógł sobie odnaleźć taką klase przy użyciu
+// *
+// * ComponentScan i utworzyć dla niej Bean'a
+// * <p>
+// * W Spring'u możemy wstrzykiwać zaleźności na trzy sposoby.
+// * 1. To przez pole, tak jak poniżej. Z andotacją @Autowired
+// * 2. Przez adnotowanie settera
+// * 3. Przez konstruktor  - najlepszy
+// *
+// *  tips: Jeśli używamy lomboka, możemy się spotkać jeszcze adnotacje
+// *       RequiredArgsContstruktor
+// *       wtedy nie trzeba tworzyć konstruktora
+// */
+//  @RestController
 public class HelloController {
 
     public HelloService helloService;
