@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset efigzal:1
+--changeset efigzal:3
 INSERT INTO POST (id, title, content, created)
 values (1, 'Test Post 1', 'Content 1', '2020-08-15T20:06:46.898688100');
 INSERT INTO POST (id, title, content, created)

@@ -2,6 +2,7 @@ package pl.emil7f.myrestapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -26,6 +27,8 @@ public class MyRestApplication {
 
     public static void main(String[] args) {
         fillDataSqlDummyCode();
+
+        System.out.println("{bcrypt}" + new BCryptPasswordEncoder().encode("test"));
 
 //       spring.jpa.show-sql=true  -> aby zobaczyć zapytatnia które wykonuje hibernate
 //        w properties należy dodać zależność

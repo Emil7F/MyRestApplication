@@ -38,12 +38,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.jdbcAuthentication()
-                .withDefaultSchema()        // tworzenie domyślnej tablicy USER
-                .dataSource(dataSource)
-                .withUser("test")
-                .password("{bcrypt}" + new BCryptPasswordEncoder().encode("test"))
-                .roles("USER");
+        auth.jdbcAuthentication().dataSource(dataSource);
     }
 
     /**
@@ -98,7 +93,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Bean
-    public UserDetailsManager userDetailsManager(){
+    public UserDetailsManager userDetailsManager() {
         return new JdbcUserDetailsManager(dataSource);
     }
 

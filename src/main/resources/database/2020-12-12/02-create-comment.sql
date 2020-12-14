@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset efigzal:1
+--changeset efigzal:2
 CREATE TABLE COMMENT
 (
     id      BIGINT AUTO_INCREMENT PRIMARY KEY,

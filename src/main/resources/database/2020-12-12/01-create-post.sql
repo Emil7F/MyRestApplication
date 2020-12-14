@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset efigzal:1
+--changeset efigzal:3
 CREATE TABLE POST
 (
     id      BIGINT AUTO_INCREMENT PRIMARY KEY,
